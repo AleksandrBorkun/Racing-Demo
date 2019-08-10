@@ -11,6 +11,33 @@
     <script>
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/RacingDemo.json", {onProgress: UnityProgress});
     </script>
+    
+    
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/RacingDemo.json", {onProgress: UnityProgress});
+    </script> <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAqRV10m-tMQWiKVqm10cQm313gqqgVC5g",
+    authDomain: "racing-demo.firebaseapp.com",
+    databaseURL: "https://racing-demo.firebaseio.com",
+    projectId: "racing-demo",
+    storageBucket: "",
+    messagingSenderId: "435311164720",
+    appId: "1:435311164720:web:5a78bfc65d8e1f17"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig); </script>
+  <!-- Previously loaded Firebase SDKs -->
+
+  <!-- Initialize Firebase -->
+  <script src="/__/firebase/init.js">
+    
   </head>
   <body>
     <div class="webgl-content">
